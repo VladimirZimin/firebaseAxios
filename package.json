@@ -4,31 +4,34 @@
   "description": "",
   "main": "index.js",
   "source": "src/index.html",
-  "homepage": "https://vladimirzimin.github.io/",
+  "homepage": "https://vladimirzimin.github.io/firebaseAxios",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /",
-	"deploy": "gh-pages -d dist",
+    "build": "parcel build src/*.html --public-url /firebaseAxios",
+    "deploy": "gh-pages -d dist",
     "server": "json-server --watch db.json -p 4040 -d 300"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladimirzimin/.git"
+    "url": "git+https://github.com/vladimirzimin/firebaseAxios.git"
   },
   "keywords": [],
   "author": "Vladimir Zimin <zimin.frontend@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
+    "buffer": "^5.7.1",
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
+    "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4",
     "prettier": "2.8.3",
-	"gh-pages": "^5.0.0",
     "sass": "^1.57.1"
   },
   "dependencies": {
-	  "notiflix": "^3.2.6"
+    "axios": "^1.3.3",
+    "notiflix": "^3.2.6"
   }
 }
