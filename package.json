@@ -2,12 +2,11 @@
   "name": "templates",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "source": "src/index.html",
   "homepage": "https://vladimirzimin.github.io/firebaseAxios",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /firebaseAxios",
+    "build": "parcel build src/*.html --public-url /firebaseAxios/",
     "deploy": "gh-pages -d dist",
     "server": "json-server --watch db.json -p 4040 -d 300"
   },
